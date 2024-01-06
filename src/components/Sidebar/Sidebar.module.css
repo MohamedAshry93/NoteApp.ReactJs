@@ -1,0 +1,80 @@
+.nav {
+    height: 100%;
+    padding: 20px 12px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid rgb(101, 51, 51);
+    position: relative;
+    background: linear-gradient(177deg, rgba(97, 62, 1, 0.75) 0%, rgba(114, 91, 48, 0.7) 77%, rgb(70, 72, 0.65) 100%);
+}
+
+.nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav ul li {
+    width: 100%;
+    padding: 0px;
+    font-size: 18px;
+    transition: background-color 350ms;
+    border-radius: 4px;
+}
+
+.nav ul li a,
+.nav ul li span {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.nav ul li i {
+    font-size: 22px;
+}
+
+.nav [class="active"],
+.nav li:hover {
+    background-color: #de8cb5;
+    border-radius: 4px;
+    color: #000;
+}
+
+.nav .active i,
+.nav li:hover i {
+    transition: color 350ms;
+}
+
+.nav .active i,
+.nav li:hover i {
+    color: #5f0030;
+}
+
+.change {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f2800;
+    color: #ffffff;
+    border-right: 1px solid #6d4601;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.btnMain {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: #5f0030;
+    --bs-btn-border-color: #800040;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #800040;
+}

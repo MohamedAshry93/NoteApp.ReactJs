@@ -1,0 +1,38 @@
+.note {
+    --padding: 15px;
+    background-color: #fcebeb;
+    border: 2px solid #fce4b0;
+    border-radius: 12px;
+}
+
+.note [class="note-body"] {
+    padding: var(--padding);
+}
+
+.note [class="note-body"] .read-more {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.note [class="note-footer"] {
+    padding: 5px var(--padding);
+    background-color: rgb(33, 37, 41, 0.05);
+}
+
+.edit {
+    transition: all 0.5s;
+}
+
+.edit:hover {
+    color: green;
+}
+
+.delete {
+    transition: all 0.5s;
+}
+
+.delete:hover {
+    color: red;
+}
