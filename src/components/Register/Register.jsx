@@ -50,7 +50,7 @@ export default function Register() {
             // console.log(data);
             if (data.msg === "done") {
                 setIsLoading(false);
-                navigate('/login');
+                navigate("/login");
             }
         },
     });
@@ -156,7 +156,10 @@ export default function Register() {
                             <div className="forget d-flex">
                                 <label>
                                     <p>
-                                        Already have account? <Link to="/login" className="fw-bold">Login..</Link>
+                                        Already have account?{" "}
+                                        <Link to="/login" className="fw-bold">
+                                            Login..
+                                        </Link>
                                     </p>
                                 </label>
                             </div>

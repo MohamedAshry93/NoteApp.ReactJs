@@ -1,4 +1,8 @@
-import { RouterProvider, createBrowserRouter, createHashRouter } from "react-router-dom";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createHashRouter,
+} from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
@@ -28,12 +32,6 @@ export default function App() {
     { path: "register", element: <Register /> },
   ]);
 
-  // let { setUserToken } = useContext(UserContext);
-  // useEffect(() => {
-  //   if (localStorage.getItem("userToken") !== null) {
-  //     setUserToken({ token: localStorage.getItem("userToken") });
-  //   }
-  // }, []);
   return (
     <>
       <UserContextProvider>

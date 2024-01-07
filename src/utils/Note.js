@@ -90,7 +90,13 @@ async function deleteNote({ noteId, user }) {
     });
 }
 
-export function showUpdateModal({ prevTitle, prevContent, headers, noteId, user }) {
+export function showUpdateModal({
+    prevTitle,
+    prevContent,
+    headers,
+    noteId,
+    user,
+}) {
     Swal.fire({
         title: "Update Note 📝",
         html: `
@@ -112,7 +118,7 @@ export function showUpdateModal({ prevTitle, prevContent, headers, noteId, user 
             content: result.value.content,
             headers,
             user,
-            noteId
+            noteId,
         });
     });
 }

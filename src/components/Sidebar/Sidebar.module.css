@@ -7,7 +7,10 @@
     align-items: center;
     border-right: 2px solid rgb(101, 51, 51);
     position: relative;
-    background: linear-gradient(177deg, rgba(97, 62, 1, 0.75) 0%, rgba(114, 91, 48, 0.7) 77%, rgb(70, 72, 0.65) 100%);
+    background: linear-gradient(177deg,
+            rgba(97, 62, 1, 0.75) 0%,
+            rgba(114, 91, 48, 0.7) 77%,
+            rgb(70, 72, 0.65) 100%);
 }
 
 .nav ul {

@@ -23,8 +23,8 @@ export default function Note({ noteData }) {
                         className={`fa-solid fa-pen-to-square pointer me-2 ${Style.edit}`}
                         onClick={() =>
                             showUpdateModal({
-                                prevTitle:noteData.title,
-                                prevContent:noteData.content,
+                                prevTitle: noteData.title,
+                                prevContent: noteData.content,
                                 noteId: noteData._id,
                                 userToken,
                                 user: setNotes,

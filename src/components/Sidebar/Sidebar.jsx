@@ -27,7 +27,8 @@ export default function Sidebar({ isMinimized, setISMinimized }) {
                     </li>
                     <li>
                         <NavLink to="/search">
-                            <i className="fa-solid fa-magnifying-glass me-2 fs-5"></i> {isMinimized ? "" : "Search"}
+                            <i className="fa-solid fa-magnifying-glass me-2 fs-5"></i>{" "}
+                            {isMinimized ? "" : "Search"}
                         </NavLink>
                     </li>
                     <li onClick={Logout}>
@@ -42,7 +43,10 @@ export default function Sidebar({ isMinimized, setISMinimized }) {
                     className={`${Style.change} shadow pointer`}
                     onClick={() => setISMinimized(!isMinimized)}
                 >
-                    <i className={`fa-solid ${isMinimized ? "fa-chevron-right" : "fa-chevron-left"} `}></i>
+                    <i
+                        className={`fa-solid ${isMinimized ? "fa-chevron-right" : "fa-chevron-left"
+                            } `}
+                    ></i>
                 </div>
             </nav>
         </>
